@@ -42,12 +42,12 @@ class EmailSender
             $mail->isSMTP();
             $mail->Host = 'smtp.yandex.ru';
             $mail->SMTPAuth = true;
-            $mail->Username = 'sveshnickova.vera';
-            $mail->Password = 'mkwwddgmynnjjpzh';
+            $mail->Username = '';
+            $mail->Password = '';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
 
-            $mail->setFrom('sveshnickova.vera@yandex.by', 'Name');
+            $mail->setFrom('', 'Name');
             $mail->addAddress($receiver->getEmail());
             $mail->Subject = $subject;
             $mail->Body = $body;
